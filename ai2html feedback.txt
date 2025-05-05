@@ -1,0 +1,19 @@
+Exceptional work yet again, Carlyle!
+
+Take a moment to review the rubric for detailed feedback and/or minor areas for improvement. Let me know if you have any questions or if you'd like to go over anything together.
+
+I’ll be saving this as an inspiration for future students—well done! :-)
+
+All province names should have equal visual hierarchy, but some currently appear smaller than others. This could suggest varying levels of importance, which may be misleading in a thematic map. To improve clarity and consistency, ensure all province names are uniform in size and formatting. If space is limited, consider using hyphenation or slight text adjustments to fit names within their respective provinces while maintaining readability.
+
+For consistency, ensure the entire hyperlink is bolded in the sources
+
+
+
+kilometres (Canadian spelling)
+
+Each province has it's --> its own...
+
+New York Tiimes --> Times
+
+The html can be copies --> copied into... 

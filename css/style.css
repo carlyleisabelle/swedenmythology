@@ -1,0 +1,280 @@
+/* 
+COURSE: CRTY1033 - Web Mapping
+PURPOSE: Responsive SVG Web Map
+DEVELOPERS: Jill E., Carlyle A., New York Times (ai2html)
+DATE: February 11, 2025
+*/
+
+/* This block should be included in all CSS files to set some important default structure properties */
+* {
+    box-sizing: border-box;
+}
+ 
+html,
+body {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255,240,226);
+}
+/* End block */
+
+/* typography */
+h1,
+h2,
+h3,
+h4 {
+    color:rgb(37,108,147);
+}
+
+p { 
+    color:rgb(0,61,100);
+}
+
+/* Theme Colours for Reference */
+/* Dark Blue --> rgb(0,61,100) */
+/* Medium Blue -->  rgb(37,108,147)*/
+/* Light Blue --> rgb(164,194,211); */
+/* Pale Orange --> rgb(255,240,226); */
+/* Dark Orange --> rgb(255,182,110) */
+
+/* header styles*/
+.main-header {
+    background-color: rgb(0,61,100);
+    background-image: url("../img/swedishBanner_Colour.svg");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-attachment: absolute;
+    background-size: 20%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-family: "Caesar Dressing";
+    font-size: 50pt;
+    color: rgb(255,240,226);
+}
+
+.main-header h2 {
+    font-size: 40pt;
+    font-weight: 200;
+    margin-top: -2rem;
+    color: rgb(255,240,226);
+}
+
+/* main container style */
+.main-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* aside/nav style */
+aside {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+/* Text box area styles */
+.text-area {
+    background-color: rgb(225,236,239);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Reset heading margins in text area */
+.text-area h3 {
+    margin: 0;
+}
+
+/* Formatting for ordered and unordered lists */
+.text-area ul,
+ol {
+    color: rgb(0,61,100);
+}
+
+/* The last text-area box has no bottom margin so that it can align with the map-container */
+#last {
+    margin-bottom: 0;
+}
+
+/* Section 2 formatting */
+.section-2 {
+    padding: 1.5rem;
+}
+
+/* Nested list goes 1,2,3, and then a,b,c */
+ol {
+    list-style-type: decimal; /* Default numbering (1, 2, 3) */
+}
+
+ol ol {
+    list-style-type: lower-alpha; /* Nested lists use a, b, c */
+}
+
+/* Link formatting */
+a { 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: rgb(0,61,100);
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: rgb(0,61,100);
+} 
+
+/* Main container for holding the map style */
+.map-container {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 0 0 55%;
+    background-color: rgb(164,194,211);
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+
+/* Reduce the width of the map within the section so that it isn't so big */
+.reduced-width {
+    width: 80%;
+    margin: 0 auto;
+    display: block; 
+    text-align: center; 
+}
+
+/* footer style */
+footer {
+    background-color:rgb(0,61,100);
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    padding-left: 30%;
+    padding-right: 30%;
+    align-content: center;
+}
+
+.main-footer p,
+.main-footer h4 {
+    color: white;
+}
+
+/* Logo style */
+.logo {
+    display: block;  /* Makes it a block element so margin works */
+    margin: 0 auto;  /* Centers the block element horizontally */
+    width: 70%;    /*reduces logo width to 70%*/
+    max-width: 400px; /* Ensures it doesn’t become too large */
+}
+
+/* CSS from AI export */
+/* Commented out default font so that it would enherit website font - left them in case they needed to be added back in the future */
+/* Adjusted default fonts sizes for better readability */
+#g-SwedenMap-box ,
+#g-SwedenMap-box .g-artboard {
+    margin:0 auto;
+}
+#g-SwedenMap-box p {
+    margin:0;
+}
+#g-SwedenMap-box .g-aiAbs {
+    position:absolute;
+}
+#g-SwedenMap-box .g-aiImg {
+    position:absolute;
+    top:0;
+    display:block;
+    width:100% !important;
+}
+#g-SwedenMap-box .g-aiSymbol {
+    position: absolute;
+    box-sizing: border-box;
+}
+#g-SwedenMap-box .g-aiPointText p { white-space: nowrap; }
+#g-SwedenMap-Artboard_1 {
+    position:relative;
+    overflow:hidden;
+}
+#g-SwedenMap-Artboard_1 p {
+    /* font-family:arial,helvetica,sans-serif; */
+    line-height:14px;
+    opacity:1;
+    letter-spacing:0.005em;
+    font-size:10px;
+    text-align:left;
+    color:rgb(0,61,100);
+    text-transform:none;
+    padding-bottom:0;
+    padding-top:0;
+    mix-blend-mode:normal;
+    font-style:normal;
+    font-weight:regular;
+    height:auto;
+    position:static;
+}
+#g-SwedenMap-Artboard_1 .g-pstyle0 {
+    font-size:14px;
+    text-align:center;
+}
+#g-SwedenMap-Artboard_1 .g-pstyle1 {
+    font-size:12px;
+    text-align:center;
+}
+#g-SwedenMap-Artboard_1 .g-pstyle2 {
+    font-size:14px;
+}
+#g-SwedenMap-Artboard_1 .g-pstyle3 {
+    font-size:12px;
+    text-align:center;
+}
+#g-SwedenMap-Artboard_1 .g-pstyle4 {
+    font-size:12px;
+    text-align:right;
+}
+#g-SwedenMap-Artboard_1 .g-pstyle5 {
+    font-size:12px;
+    text-align:right;
+}
+#g-SwedenMap-Artboard_1 .g-pstyle6 {
+    font-size:12px;
+    text-align:center;
+}
+
+
+
+/* Responsive layout - makes the sections (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 760px) {
+section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+/* Change background image size so that it isn't so tiny on mobile */
+.main-header { 
+    background-size: 40%;
+    background-repeat: repeat-x;
+}
+
+/* Created a reduced-width class for desktop viewing, however on mobile the graphic looks better at 100% width (default settings) */
+.reduced-width {
+    width: 100%;
+    margin: 0 auto; /* Centers the element horizontally */
+    display: block; /* Ensures it behaves like a block for centering */
+    text-align: center; /* Centers inline content if applicable */
+}
+
+/* Change footer margins on mobile */
+footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+}
+
+}
+
+
+
+    

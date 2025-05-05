@@ -1,0 +1,30 @@
+In simple terms, this ai2html JavaScript code is a tool that helps convert artwork created in Adobe Illustrator into code (HTML and CSS) that can be used on websites.
+Here’s what it’s doing, broken down:
+ 
+1. Reading Your Illustrator File
+The script looks at your Illustrator document to understand the layout, images, fonts, colors, and other design elements.
+ 
+2. Setting Rules for Conversion
+It has a bunch of settings and rules that determine how your artwork will be converted:
+What image formats to use (PNG, JPEG, SVG).
+How text should appear (as HTML text or as images).
+How responsive the graphic should be (fixed size or dynamic for different screens).
+
+3. Converting Graphics to Web Code
+The script translates Illustrator layers, text, and images into web-friendly code:
+HTML defines the structure (like where images and text go).
+CSS controls the appearance (fonts, colors, spacing).
+
+4. Handling Fonts and Styles
+It maps Illustrator fonts to web fonts, ensuring that the text looks similar on websites. It even adjusts for small differences between how text appears in Illustrator versus browsers.
+ 
+5. Saving the Output
+Once the conversion is done, the script saves everything into folders:
+HTML files to be embedded in web pages.
+Image files optimized for fast loading.
+
+6. Error Checking and Warnings
+The script checks for common mistakes, like missing fonts or unsaved files, and gives warnings if something might go wrong.
+ 
+Why It’s Useful:
+Instead of manually recreating a design for the web, this script automates the process, making it faster and more consistent—especially for complex graphics like charts or maps.
